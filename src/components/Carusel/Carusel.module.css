@@ -1,0 +1,35 @@
+.carusel {
+    height: 255px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+}
+
+.carts {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 30px;
+    transition: translateX;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow img {
+    width: 40px;
+}

@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px
+}
+
+@media screen and (width<750px) {
+
+    .container {
+        display: none;
+    }
+}

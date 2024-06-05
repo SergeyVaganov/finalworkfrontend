@@ -1,0 +1,64 @@
+.wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    gap: 0px;
+    margin: 25px 0;
+}
+
+.btn {
+    cursor: pointer;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn object {
+    width: 40px;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.windows {
+    overflow: hidden;
+    border: 1px solid #029491;
+    position: relative;
+    border-radius: 0 10px 10px 0;
+}
+
+.slides {
+    position: absolute;
+    left: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    height: 100%;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms
+}
+
+.title,
+.slide {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 0.02em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title {
+    background: var(--color-primary);
+    color: var(--color-white);
+    width: 133px;
+    border-radius: 10px 0 0 10px;
+}

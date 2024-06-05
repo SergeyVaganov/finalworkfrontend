@@ -1,0 +1,150 @@
+.card {
+    height: 540px;
+    max-width: 415px;
+    min-width: 300px;
+    border-radius: 10px;
+    border: 2px solid var(--color-black);
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 0px 20px 0px #00000033;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 11px 15px 0 30px;
+    height: 132px;
+    display: grid;
+    grid-template-columns: 1fr 85px;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.img {
+    width: 100%;
+    grid-row: 1 / span 2;
+    grid-column: 2;
+}
+
+.img img {
+    width: 90px;
+}
+
+.name {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+}
+
+.desciption {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    grid-column: 1;
+    grid-row: 2;
+    z-index: 5px;
+}
+
+.main {
+    flex-shrink: 10;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 30px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.current {
+    align-self: end;
+    text-align: center;
+    background-color: #5970FF;
+    height: 24px;
+    border-radius: 10px;
+    color: white;
+    width: 108px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.price>div:first-child {
+    display: inline;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.price>div:first-child::after {
+    content: ' \20BD';
+}
+
+.price>div:last-child {
+    margin-left: 25px;
+    display: inline;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.price>div:last-child::after {
+    content: ' \20BD';
+}
+
+.descriptionPrice {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.titleList {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.list>div::before {
+    content: '\2714';
+    color: green
+}
+
+.card button {
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 25px;
+    height: 60px;
+    width: 80%;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    padding: 5px;
+}

@@ -1,0 +1,10 @@
+.card {
+    height: 100%;
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.card div {
+    margin-top: 15px;
+}

@@ -1,0 +1,10 @@
+.img {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img>object {
+    width: 100%;
+    min-width: 600px;
+}

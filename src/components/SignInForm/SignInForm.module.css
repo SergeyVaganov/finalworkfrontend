@@ -1,0 +1,126 @@
+.wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.lock {
+    position: relative;
+}
+
+.lock img,
+.lock object {
+    width: 50px;
+    position: absolute;
+    top: -50px;
+    left: -60px;
+}
+
+.wrapper>form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.wrapper>form div {
+    width: 80%;
+    text-align: start;
+}
+
+.wrapper input {
+    width: 100%;
+    height: 43px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+.wrapper input:focus {
+    outline: none;
+}
+
+
+.error {
+    color: #FF5959
+}
+
+.errorinput {
+    border: 1px solid #FF5959;
+
+}
+
+.errorinput:focus {
+    border: 1px solid #FF5959;
+
+}
+
+.wrapper button {
+    margin-top: 10px;
+    width: 80%;
+    height: 43px;
+}
+
+.entries {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px
+}
+
+.entries div {
+    border: 1px solid black;
+    width: 30%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper>div:last-child {
+    align-self: center;
+    width: 80%;
+    margin-bottom: 25px;
+}
+
+.wrapper>div:first-child {
+    align-self: center;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.wrapper>div:first-child div {
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: 5px 5px;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.entries div img {
+    margin: auto;
+    width: 75%;
+}
+
+@media screen and (width<750px) {
+
+    .lock img,
+    .lock object {
+        top: -60px;
+        left: 90px;
+    }
+}
+
+@media screen and (width<550px) {
+    .lock object {
+        top: -60px;
+        left: 40px;
+    }
+}

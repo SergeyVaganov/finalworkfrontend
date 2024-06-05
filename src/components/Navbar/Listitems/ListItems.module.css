@@ -1,0 +1,18 @@
+.menuItems {
+    flex: 1 5 250px;
+    max-width: 250px;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (width<750px) {
+
+    .menuItems {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.main {
+    margin-top: 110px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.main h1 {
+    margin-bottom: 71px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}

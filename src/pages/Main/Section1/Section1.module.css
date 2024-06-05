@@ -1,0 +1,35 @@
+.section {
+    padding-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px
+}
+
+.item1 {
+    max-width: 700px;
+    flex: 1 1 500px;
+    min-width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    gap: 25px;
+}
+
+.item2 {
+    flex: 1 1 500px;
+    min-width: 250px;
+    max-width: 700px;
+}
+
+.item2>object {
+    left: -50px;
+    width: 100%;
+}
+
+/* @media screen and (width>1440px) {
+
+    h1 {
+        font-size: 60px;
+    }
+} */
